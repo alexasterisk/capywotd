@@ -1,0 +1,34 @@
+{
+    // https://aka.ms/tsconfig.json
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "nodenext",
+        "moduleDetection": "force",
+        "outDir": "./dist",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "newLine": "lf",
+        "strict": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "downlevelIteration": true,
+        "incremental": true,
+        "declaration": true,
+        "tsBuildInfoFile": "./dist/.tsbuildinfo",
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/@types"
+        ]
+    },
+    "include": ["./src"],
+    "exclude": [
+        "./node_modules",
+        "./dist"
+    ]
+}

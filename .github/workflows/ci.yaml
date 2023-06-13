@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: npm i
+
+    - name: Check linting
+      run: npm run check:lint
+
+    - name: Check formatting
+      run: npm run check:format
+
+    - name: Check TS build
+      run: npm run build
