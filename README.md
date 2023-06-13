@@ -42,7 +42,7 @@ Make sure to replace the values with your own, the curly braces should also be r
 Once you have the environment set up, you can run the program by running `npm run deploy` in the command line.
 This will run the program and send the email to the recipient every time a new Word of the Day is posted (margin of error is 20 minutes).
 
-This also has support for [PM2](https://pm2.keymetrics.io/), so you can run it in the background. When using `npm run build` it will run **deploy** and name the PM2 process **capy-wotd**.
+This also has support for [PM2](https://pm2.keymetrics.io/), so you can run it in the background. When using `npm run pm2` it will run **deploy** and name the PM2 process **capy-wotd**.
 
 ### Contributing
 Since this was a quickly made project, there's a lot of things that could be changed. If you want to contribute, feel free to make a pull request. This is also a MIT licensed project, so modify and do whatever you want with it.
